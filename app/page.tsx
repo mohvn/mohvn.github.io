@@ -31,27 +31,30 @@ export default function Home() {
           </div>
         </header>
       </div>
-      <h3 className="text-sm text-[#484848] absolute top-[80px] left-5 p-1 bg-background">content</h3>
-      <div className="flex justify-center mx-4 gap-4 border p-4 border-[#484848]">
-        <div>
-          <Image
-            className="rounded-xl"
-            src="https://avatars.githubusercontent.com/u/57570197?v=4"
-            width={200}
-            height={200}
-            alt="pfp"
-          />
-        </div>
-        <div>
-          <div className="flex items-center">
-            <ChevronRight color="#99ffe4" />
-            <h1 className="text-2xl fonte-bold">whoami</h1>
+      <div className="group">
+        <h3 className="text-sm text-[#484848] absolute top-[80px] left-5 p-1 bg-background group-hover:text-[#ffc799] transition-all duration-300">content</h3>
+        <div className="flex justify-center mx-4 gap-4 border p-4 border-[#484848] group-hover:border-[#ffc799] transition-all duration-300">
+          <div>
+            <Image
+              className="rounded-xl"
+              src="https://avatars.githubusercontent.com/u/57570197?v=4"
+              width={200}
+              height={200}
+              alt="pfp"
+            />
           </div>
-          <p className="text-sm ml-6 font-medium">
-            I'm Mohan Elias, a developer from São Paulo, Brazil. I'm pursuing a Technology degree in Systems Analysis and Development at Universidade Católica de Santos.
-          </p>
+          <div>
+            <div className="flex items-center">
+              <ChevronRight color="#99ffe4" />
+              <h1 className="text-2xl fonte-bold">whoami</h1>
+            </div>
+            <p className="text-sm ml-6 font-medium">
+              I'm Mohan Elias, a developer from São Paulo, Brazil. I'm pursuing a Technology degree in Systems Analysis and Development at Universidade Católica de Santos.
+            </p>
+          </div>
         </div>
       </div>
+
     </div>
   );
 }
