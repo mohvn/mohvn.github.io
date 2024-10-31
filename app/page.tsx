@@ -8,7 +8,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-jetbrains-mono)] text-[#c9c7cd]">
-      <header className="flex items-center justify-end p-4">
+      <h3 className="text-sm text-[#484848] absolute top-0 left-5 p-1 bg-background">header</h3>
+      <header className="flex items-center justify-end p-4 border m-4 border-[#484848]">
         <div className="flex items-center gap-2">
           <p>
             <span className="font-bold">0x</span>
@@ -30,7 +31,8 @@ export default function Home() {
           <ModeToggle />
         </div>
       </header>
-      <div className="flex justify-center items-center mx-10 gap-4">
+      <h3 className="text-sm text-[#484848] absolute top-[87px] left-5 p-1 bg-background">content</h3>
+      <div className="flex justify-center mx-4 gap-4 border p-4 border-[#484848]">
         <div>
           <Image
             className="rounded-xl"
