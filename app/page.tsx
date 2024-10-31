@@ -1,7 +1,6 @@
 import { CibGithub } from "@/components/icons/cib-github";
 import { IcBaselineEmail } from "@/components/icons/ic-baseline-email";
 import { RiLinkedinFill } from "@/components/icons/ri-linkedin-fill";
-import { ModeToggle } from "@/components/mode-toggle";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -32,7 +31,7 @@ export default function Home() {
           </div>
         </header>
       </div>
-      <h3 className="text-sm text-[#484848] absolute top-[87px] left-5 p-1 bg-background">content</h3>
+      <h3 className="text-sm text-[#484848] absolute top-[80px] left-5 p-1 bg-background">content</h3>
       <div className="flex justify-center mx-4 gap-4 border p-4 border-[#484848]">
         <div>
           <Image
