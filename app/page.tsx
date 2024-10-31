@@ -29,7 +29,6 @@ export default function Home() {
               <IcBaselineEmail fill="currentColor" className="w-6 h-6 hover:text-[#ffc799]" />
             </a>
             <p className="text-xl text-[#ffc799]">]</p>
-            <ModeToggle />
           </div>
         </header>
       </div>
