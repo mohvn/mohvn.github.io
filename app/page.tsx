@@ -1,60 +1,78 @@
 import { CibGithub } from "@/components/icons/cib-github";
 import { IcBaselineEmail } from "@/components/icons/ic-baseline-email";
 import { RiLinkedinFill } from "@/components/icons/ri-linkedin-fill";
+import { ModeToggle } from "@/components/mode-toggle";
+import HyperText from "@/components/ui/hyper-text";
+import BnxLogo from "@/components/bnx-logo";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import BlurFade from "@/components/ui/blur-fade";
+import BrasilSorrisoLogo from "@/components/brasil-sorriso-logo";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-jetbrains-mono)] text-[#c9c7cd]">
-      <div className="group">
-        <h3 className="text-sm text-[#484848] absolute top-0 left-5 p-1 bg-background group-hover:text-[#ffc799] transition-all duration-300">header</h3>
-        <header className="flex items-center justify-end p-4 border m-4 border-[#484848] group-hover:border-[#ffc799] transition-all duration-300">
-          <div className="flex items-center gap-2">
-            <p>
-              <span className="font-bold">0x</span>
-              <span>9BA6ADCC0F05BE4B</span>
-            </p>
-            <p className="text-xl text-[#ffc799]">[</p>
-            <a href="https://www.linkedin.com/in/mohaneliasv/">
-              <RiLinkedinFill fill="currentColor" className="w-6 h-6 hover:text-[#ffc799]" />
-            </a>
-            <p className="text-xl text-[#ffc799]">,</p>
-            <a href="https://github.com/mohvn">
-              <CibGithub fill="currentColor" className="w-6 h-6 hover:text-[#ffc799]" />
-            </a>
-            <p className="text-xl text-[#ffc799]">,</p>
-            <a href="mailto:mohvn.elias@hotmail.com">
-              <IcBaselineEmail fill="currentColor" className="w-6 h-6 hover:text-[#ffc799]" />
-            </a>
-            <p className="text-xl text-[#ffc799]">]</p>
-          </div>
+    <div className="min-h-screen text-sm p-4 flex items-center justify-center w-full font-[family-name:var(--font-geist-mono)] text-gray-300">
+      <div className="absolute top-4 right-4">
+        <ModeToggle />
+      </div>
+      <main className="max-w-[600px] mx-auto">
+        <header className="mb-8">
+          <p className="font-bold text-white">mohan elias</p>
+          <p className="text-[#666]">sao paulo, br.</p>
         </header>
-      </div>
-      <div className="group">
-        <h3 className="text-sm text-[#484848] absolute top-[80px] left-5 p-1 bg-background group-hover:text-[#ffc799] transition-all duration-300">content</h3>
-        <div className="flex justify-center mx-4 gap-4 border p-4 border-[#484848] group-hover:border-[#ffc799] transition-all duration-300">
-          <div>
-            <Image
-              className="rounded-xl"
-              src="https://avatars.githubusercontent.com/u/57570197?v=4"
-              width={200}
-              height={200}
-              alt="pfp"
-            />
-          </div>
-          <div>
-            <div className="flex items-center">
-              <ChevronRight color="#99ffe4" />
-              <h1 className="text-2xl fonte-bold">whoami</h1>
-            </div>
-            <p className="text-sm ml-6 font-medium">
-              I'm Mohan Elias, a developer from São Paulo, Brazil. I'm pursuing a Technology degree in Systems Analysis and Development at Universidade Católica de Santos.
-            </p>
-          </div>
-        </div>
-      </div>
+        <section>
+          <BlurFade delay={0.25} inView>
+            <div className="items-center gap-2">
 
-    </div>
+              <div className="flex items-center gap-2">
+                <BnxLogo className="w-10 h-10 fill-foreground" />
+                <p className="text-white">BNX</p>
+                <p className="text-[#666]">Help Desk Technician</p>
+              </div>
+
+
+              <div className="flex items-center gap-2">
+                <p>Currently working as a help desk technician and aiming to transition into the field of development. Driven to apply my technical foundation and problem-solving skills to create impactful digital solutions.</p>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={0.5} inView className="my-10">
+            <div className="gap-2">
+              <p className="text-white font-bold">interests</p>
+              <p>- Front-end Development</p>
+              <p>- UI/UX Design</p>
+              <p>- Open Source</p>
+              <p>- Cybersecurity</p>
+              <p>- Linux</p>
+            </div>
+          </BlurFade>
+          <BlurFade delay={0.6} inView className="my-10">
+            <div className="gap-2">
+              <p className="text-white font-bold">education</p>
+              <p>CCAA - English Course - 2011 - 2019</p>
+              <p>SOS Informatics - Course C# Fundamentals - 2016 - 2017</p>
+              <p>UNISANTOS - Degree in System Analysis and Development - 2023 - 2025</p>
+            </div>
+          </BlurFade>
+
+          <BlurFade delay={0.75} inView className="my-10">
+            <div className="gap-2">
+              <p className="text-white font-bold">previous experience</p>
+              <div className="flex items-center gap-2">
+                <BnxLogo className="fill-foreground" />
+                <p className="text-white">BNX</p>
+                <p className="text-[#666]">Administrative Assistant 2023 - 2024</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <BrasilSorrisoLogo className="fill-foreground" />
+                <p className="text-white">Brasil Sorriso</p>
+                <p className="text-[#666]">Customer Service 2022 - 2023</p>
+              </div>
+            </div>
+          </BlurFade>
+        </section>
+      </main>
+    </div >
   );
 }
