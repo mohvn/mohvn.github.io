@@ -1,11 +1,5 @@
-import { CibGithub } from "@/components/icons/cib-github";
-import { IcBaselineEmail } from "@/components/icons/ic-baseline-email";
-import { RiLinkedinFill } from "@/components/icons/ri-linkedin-fill";
 import { ModeToggle } from "@/components/mode-toggle";
-import HyperText from "@/components/ui/hyper-text";
 import BnxLogo from "@/components/bnx-logo";
-import { ChevronRight } from "lucide-react";
-import Image from "next/image";
 import BlurFade from "@/components/ui/blur-fade";
 import BrasilSorrisoLogo from "@/components/brasil-sorriso-logo";
 
